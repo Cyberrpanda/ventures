@@ -57,8 +57,10 @@
 }
 
 .content2 {
-  display: none;
-  position: relative;
+  display: block;
+  position: absolute;
+  top: 20%;
+  left: 35%;
   width: 400px;
   border-radius: 20px;
   backdrop-filter: blur(20px);
@@ -124,6 +126,27 @@ select {
   text-align: center;
   align-items: center;
 }
+
+.log{
+ color: white;  
+}
+
+.register{
+  color: white;
+}
+
+.footer{
+  display: flex;
+  background-color: #B5AD9E;
+  color:#213739;
+  height: auto;
+  width: 100vw;
+}
+
+.footcontent{
+  padding: 35px;
+}
+
 
 
 

@@ -3,7 +3,7 @@ import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from "./navbar";
 import { Link } from "react-router-dom";
-
+import Footer from "./footer";
 
 export default function Home(){
     return(
@@ -21,7 +21,7 @@ export default function Home(){
         </div>
       </div>
       
-      
+      <Footer></Footer>
 
     </>
     );

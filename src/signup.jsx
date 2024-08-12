@@ -2,7 +2,7 @@ import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './navbar';
 import React, { useState } from 'react';
-
+import Footer from './footer';
 
 export default function Signup (){
 
@@ -120,7 +120,7 @@ export default function Signup (){
             <label>
               <p>Already have an account </p>
             </label>
-
+            ||
             <span className="log" onClick={() => handleLogin()} style={{ cursor: 'pointer' }}>
               Login
             </span>
@@ -180,7 +180,7 @@ export default function Signup (){
             <label>
               <p>Dont have an account </p>
             </label>
-
+            || 
             <span className="register" onClick={() => handleRegister ()} style={{ cursor: 'pointer' }}>
               Register
             </span>
@@ -189,6 +189,8 @@ export default function Signup (){
       </div>
          )}
   </div>
+
+    <Footer></Footer>
         </>
     )
 

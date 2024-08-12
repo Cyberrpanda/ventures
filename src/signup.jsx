@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './navbar';
 import React, { useState } from 'react';
 
+
 export default function Signup (){
 
     const [showLogin, setShowLogin] = useState(true);
@@ -17,7 +18,7 @@ export default function Signup (){
 
     return (
         <>
-        <div className="opening">
+        <div className="opening text-center">
          <Navbar></Navbar>
          {showLogin ? (
          <div id="content" className="content">
@@ -29,7 +30,7 @@ export default function Signup (){
 
         <form>
           <div className="fields">
-            <img className="img" src="/face-scan.png" alt="face" />
+            <img className="img" src="../MEDIA/face-scan.png" alt="face" />
             <input
               className="fill"
               type="text"
@@ -104,7 +105,7 @@ export default function Signup (){
           </div>
 
           <br />
-          <div className="btn btn-group-lg btn-success">
+          <div className="btn btn-group-lg btn-success ">
             <span>Submit</span>
           </div>
 
@@ -161,7 +162,7 @@ export default function Signup (){
           </div>
 
           <br />
-          <div className="btn btn-group-lg btn-success">
+          <div className="btn btn-group-lg btn-success ">
             <span>Submit</span>
           </div>
 

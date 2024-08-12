@@ -2,10 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 .opening{
-  background-image: url('/Media/gratisography-colorful-boots-free-stock-photo.jpg');
+  background-image: url('../public/Media/gratisography-colorful-boots-free-stock-photo.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
@@ -43,7 +44,6 @@
   cursor: pointer;
 }
 
-
 .content {
   display: block;
   position: absolute;
@@ -69,6 +69,7 @@
 
 .formtxt{
   color: white;
+  text-align: center;
 }
 
 .fill {
@@ -112,12 +113,18 @@ select {
 
 .login {
   color: cornflowerblue;
-
+  text-align: center;
 }
 
 .login a {
   text-decoration: none;
 }
+
+.fields{
+  text-align: center;
+  align-items: center;
+}
+
 
 
 

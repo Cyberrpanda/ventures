@@ -3,6 +3,8 @@ import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from "./navbar";
 import { Link } from "react-router-dom";
+import Location from "./destinations";
+import Book from "./booking";
 import Footer from "./footer";
 
 export default function Home(){
@@ -11,7 +13,7 @@ export default function Home(){
       <div className="opening">
        <Navbar />
         <div className="">
-            <p className=" introtext">
+            <p className="introtext ">
                 Let's Start your Journey
                 <br />
                 <Link to="/signup"  className="btn btn-primary">
@@ -20,8 +22,14 @@ export default function Home(){
             </p>
         </div>
       </div>
-      
-      <Footer></Footer>
+      <br />
+      <Location/>
+      <br />
+      <br />
+      <Book/>
+      <br />
+
+      <Footer/>
 
     </>
     );

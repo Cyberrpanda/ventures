@@ -35,7 +35,7 @@ export default function Book(){
           </div>
           <div className="in col-md-3 mb-3">
               <label for="travelers">Number of People</label>
-              <select  style={{ backgroundColor: "white", border: "1px solid #ccc", width:"300px" }}>
+              <select>
                 <option value="0"></option>
                 <option value="1">1</option>
                 <option value="2">2</option>

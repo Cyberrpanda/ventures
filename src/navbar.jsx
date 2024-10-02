@@ -41,7 +41,7 @@ export default function Navbar() {
     </nav>
    
         <button className="nav-btn" onClick={showNavbar}>
-          {navIsOpen ? <FaTimes /> : <FaBars />}
+          {navIsOpen ? <FaTimes className="nav-icon" /> : <FaBars className="nav-icon" />}
         </button>
    </header>
    </>

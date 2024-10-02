@@ -30,7 +30,7 @@ export default function Signup (){
 
         <form>
           <div className="fields">
-            <img className="img" src="../MEDIA/face-scan.png" alt="face" />
+            <img className="img" src="../face-scan.png" alt="face" />
             <input
               className="fill"
               type="text"
@@ -43,7 +43,7 @@ export default function Signup (){
             <br />
             <br />
 
-            <img className="img" src="../MEDIA/face-scan.png" alt="face" />
+            <img className="img" src="../face-scan.png" alt="face" />
             <input
               className="fill"
               type="text"
@@ -56,7 +56,7 @@ export default function Signup (){
             <br />
             <br />
 
-            <img className="img" src="../MEDIA/email.png" alt="email" />
+            <img className="img" src="../email.png" alt="email" />
             <input
               className="fill"
               type="email"
@@ -69,7 +69,7 @@ export default function Signup (){
             <br />
             <br />
 
-            <img className="img" src="../MEDIA/hide.png" alt="password" />
+            <img className="img" src="../hide.png" alt="password" />
             <input
               className="fill"
               type="password"
@@ -82,7 +82,7 @@ export default function Signup (){
             <br />
             <br />
 
-            <img className="img" src="../MEDIA/hide.png" alt="password" />
+            <img className="img" src="../hide.png" alt="password" />
             <input
               className="fill"
               type="password"
@@ -95,7 +95,7 @@ export default function Signup (){
             <br />
             <br />
 
-            <img className="img" src="../MEDIA/gender.png" alt="gender" />
+            <img className="img" src="../gender.png" alt="gender" />
             <select name="gender" id="gender">
               <option value="0"></option>
               <option value="1">Male</option>
@@ -137,7 +137,7 @@ export default function Signup (){
 
         <form action="#">
           <div className="fields1">
-            <img className="img" src="../MEDIA/email.png" alt="email" />
+            <img className="img" src="../email.png" alt="email" />
             <input
               className="fill"
               type="email"
@@ -150,7 +150,7 @@ export default function Signup (){
             <br />
             <br />
 
-            <img className="img" src="../MEDIA/hide.png" alt="password" />
+            <img className="img" src="../hide.png" alt="password" />
             <input
               className="fill"
               type="password"

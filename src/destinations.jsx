@@ -17,7 +17,7 @@ export default function Location() {
  
   return (
     <>
-      <div className="locate">
+      <div className="locate" id='destinations'>
         <div className='dest'>
           <section>
             <div className="heading">

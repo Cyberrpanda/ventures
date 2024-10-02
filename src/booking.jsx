@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 export default function Book(){
    return(
     <>
-     <div className="book">
+     <div className="book" id="bookings">
       <h2>Custom Trips</h2>
 
       <section className="search-section mt-4">
@@ -35,7 +35,7 @@ export default function Book(){
           </div>
           <div className="in col-md-3 mb-3">
               <label for="travelers">Number of People</label>
-              <select  style={{ backgroundColor: "white", border: "1px solid #ccc" }}>
+              <select  style={{ backgroundColor: "white", border: "1px solid #ccc", width:"300px" }}>
                 <option value="0"></option>
                 <option value="1">1</option>
                 <option value="2">2</option>

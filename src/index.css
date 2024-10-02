@@ -14,6 +14,18 @@
   height: 100vh;
 }
 
+header .nav-btn {
+  padding: 5px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1000;
+}
+
 .introtext{
   text-align: center;
   color: white;
@@ -33,12 +45,20 @@
   justify-content: space-between;
   width: 100%;
   height: auto;
+  align-items: center;
 }
 
-.logo{
-  color: white;
-  padding: 15px;
-  cursor: pointer;
+.navbar{
+  margin-left: auto;
+}
+
+.navbar ul{
+  display: flex;
+}
+
+.navbar ul li a {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit color from parent element */
 }
 
 .navbar ul li {
@@ -46,6 +66,17 @@
   display: inline;
   padding: 20px;
   cursor: pointer;
+}
+
+.logo{
+  color: white;
+  padding: 15px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.head a{
+  text-decoration: none;
 }
 
 .content {
@@ -370,6 +401,341 @@ body {
 }
 
 
+@media (max-width: 600px) {
+  /*Phone view*/
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  header .nav-btn {
+    display: block;
+    position: fixed;
+    right: 1rem;
+    visibility: visible;
+    opacity: 1;
+    z-index: 1001;
+  }
+
+  header nav.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #122340; /* Add background color */
+    gap: 1.5rem;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(-100%);
+    z-index: 999;
+    padding-top: 7rem;
+  }
+
+  header nav.navbar.open {
+    transform: translateX(0); /* Move navbar into view */
+  }
+
+  header nav.navbar ul {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  header nav.navbar ul li {
+    display: block;
+    padding: 20px 0;
+  }
+
+  .opening {
+    margin: 0 auto;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  .form-row{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .fields{
+    text-align: center;
+    align-items: center;
+  }
+
+  .content{
+    width: 100%;
+    left: 0;
+  }
+
+  .content2{
+    width: 100%;
+    left: 0;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center the content */
+    padding: 20px; /* Add padding for better spacing */
+    text-align: center; /* Center the text */
+    width: 100%; /* Ensure the footer takes up full width */
+    overflow-x: hidden; /* Prevent horizontal overflow */
+  }
+
+  .footcontent {
+    padding: 20px; /* Adjust padding for mobile view */
+    width: 100%; /* Make sure the content is responsive */
+  }
+
+  .footcontent ul {
+    list-style-type: none; /* Remove bullet points for a cleaner look */
+    padding: 0;
+  }
+
+  .footcontent ul li {
+    margin: 10px 0; /* Add some space between list items */
+  }
+
+  .footcontent ul a {
+    color: #213739; /* Keep the text color consistent */
+    text-decoration: none; /* Remove underline */
+    display: block; /* Make links easier to tap */
+  }
+
+  .exempt{
+    display: none;
+  }
+}
 
 
+@media (max-width: 480px) {
+  /*Phone view*/
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  header .nav-btn {
+    display: block;
+    position: fixed;
+    right: 1rem;
+    visibility: visible;
+    opacity: 1;
+    z-index: 1001;
+  }
+
+  header nav.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #122340; /* Add background color */
+    gap: 1.5rem;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(-100%);
+    z-index: 999;
+    padding-top: 7rem;
+  }
+
+  header nav.navbar.open {
+    transform: translateX(0); /* Move navbar into view */
+  }
+
+  header nav.navbar ul {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  header nav.navbar ul li {
+    display: block;
+    padding: 20px 0;
+  }
+
+  .opening {
+    margin: 0 auto;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  .form-row{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .fields{
+    text-align: center;
+    align-items: center;
+  }
+
+  .content{
+    width: 100%;
+    left: 0;
+  }
+
+  .content2{
+    width: 100%;
+    left: 0;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center the content */
+    padding: 20px; /* Add padding for better spacing */
+    text-align: center; /* Center the text */
+    width: 100%; /* Ensure the footer takes up full width */
+    overflow-x: hidden; /* Prevent horizontal overflow */
+  }
+
+  .footcontent {
+    padding: 20px; /* Adjust padding for mobile view */
+    width: 100%; /* Make sure the content is responsive */
+  }
+
+  .footcontent ul {
+    list-style-type: none; /* Remove bullet points for a cleaner look */
+    padding: 0;
+  }
+
+  .footcontent ul li {
+    margin: 10px 0; /* Add some space between list items */
+  }
+
+  .footcontent ul a {
+    color: #213739; /* Keep the text color consistent */
+    text-decoration: none; /* Remove underline */
+    display: block; /* Make links easier to tap */
+  }
+
+  .exempt{
+    display: none;
+  }
+}
+
+
+@media (max-width: 375px) {
+  /*Phone view*/
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  header .nav-btn {
+    display: block;
+    position: fixed;
+    right: 1rem;
+    visibility: visible;
+    opacity: 1;
+    z-index: 1001;
+  }
+
+  header nav.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #122340; /* Add background color */
+    gap: 1.5rem;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(-100%);
+    z-index: 999;
+    padding-top: 7rem;
+  }
+
+  header nav.navbar.open {
+    transform: translateX(0); /* Move navbar into view */
+  }
+
+  header nav.navbar ul {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  header nav.navbar ul li {
+    display: block;
+    padding: 20px 0;
+  }
+
+  .opening {
+    margin: 0 auto;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  .form-row{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .fields{
+    text-align: center;
+    align-items: center;
+  }
+
+  .content{
+    width: 100%;
+    left: 0;
+  }
+
+  .content2{
+    width: 100%;
+    left: 0;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center the content */
+    padding: 20px; /* Add padding for better spacing */
+    text-align: center; /* Center the text */
+    width: 100%; /* Ensure the footer takes up full width */
+    overflow-x: hidden; /* Prevent horizontal overflow */
+  }
+
+  .footcontent {
+    padding: 20px; /* Adjust padding for mobile view */
+    width: 100%; /* Make sure the content is responsive */
+  }
+
+  .footcontent ul {
+    list-style-type: none; /* Remove bullet points for a cleaner look */
+    padding: 0;
+  }
+
+  .footcontent ul li {
+    margin: 10px 0; /* Add some space between list items */
+  }
+
+  .footcontent ul a {
+    color: #213739; /* Keep the text color consistent */
+    text-decoration: none; /* Remove underline */
+    display: block; /* Make links easier to tap */
+  }
+
+  .exempt{
+    display: none;
+  }
+}
 

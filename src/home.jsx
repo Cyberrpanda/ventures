@@ -10,7 +10,7 @@ import Footer from "./footer";
 export default function Home(){
     return(
     <>
-      <div className="opening">
+      <div className="opening" id="home">
        <Navbar />
         <div className="">
             <p className="introtext ">

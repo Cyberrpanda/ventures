@@ -1,5 +1,5 @@
 import "./index.css";
-
+import { HashLink as Link } from "react-router-hash-link";
 
 export default function Footer(){
   return(
@@ -18,20 +18,20 @@ export default function Footer(){
               <h6>Site Content</h6>
               <br />
               <ul>
-                <li>Lorem ipsum </li>
-                <br />
-                <li>Lorem ipsum </li>
-                <br />
-                <li className="footexe">Lorem ipsum </li>
-                <br />
-                <li className="footexe">Lorem ipsum </li>
-                <br />
-                
+              <li>
+              <Link smooth to="/#home">Home</Link>
+            </li>
+            <li>
+              <Link smooth to="/#destinations" >Destinations</Link>
+            </li>
+            <li>
+              <Link smooth to="/#bookings" >Bookings</Link>
+            </li>
               </ul>
         </div>
 
 
-        <div className="footcontent footexe">
+        <div className="footcontent footexe exempt">
 
             <h6>Our Services</h6>
               <br />
